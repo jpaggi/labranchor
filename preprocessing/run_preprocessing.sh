@@ -23,10 +23,13 @@ bedtools intersect -loj -s -a gencode.v19.introns.bpregion.bed -b ../anno/taggar
 
 ## Prepare conservation scores.
 ## Note that this will take longer than the above.
+## Comment out if previously run
 
 # Convert conservation scores to bedgraph.
 #./bigWigToBedGraph ../anno/hg19.100way.phastcons.bw ../anno/hg19.100way.phastcons.bedGraph
 #./bigWigToBedGraph ../anno/hg19.100way.phyloP100way.bw ../anno/hg19.100way.phyloP100way.bedGraph
+
 # Extract only entries we are interested in.
-#bedtools intersect -u -a ../anno/hg19.100way.phyloP100way.bedGraph -b gencode.v19.introns.bpregion.bed
-#bedtools intersect -u -a ../anno/hg19.100way.phastcons.bedGraph -b gencode.v19.introns.bpregion.bed
+#bedtools intersect -u -a ../anno/hg19.100way.phyloP100way.bedGraph -b gencode.v19.introns.bpregion.bed > ../anno/hg19.100way.phyloP100way.bp.bed
+#bedtools intersect -u -a ../anno/hg19.100way.phastcons.bedGraph -b gencode.v19.introns.bpregion.bed > ../anno/hg19.100way.phastCons.bp.bed
+#bedtools intersect -u -a ../../primates/hg19.phyloP46way.primate.bedGraph -b gencode.v19.introns.bpregion.bed > ../anno/hg19.46way.phylop.primates.bp.bed
