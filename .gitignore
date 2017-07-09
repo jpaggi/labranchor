@@ -1,0 +1,12 @@
+.DS_Store
+
+*~
+*.pyc
+*.bed
+*.tsv
+notebooks/.ipynb_checkpoints/*
+notebooks/deprecated/*
+notebooks/deprecated_model_trainers/*
+
+literature/*
+anno/*
