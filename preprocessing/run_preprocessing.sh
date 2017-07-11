@@ -13,12 +13,16 @@
 # The coordinates are transposed if the 3'ss aligns to the minus strand.
 cat ../anno/gencode.v19.annotation.gtf | python bp_intron_bed.py | sort -u -k1,1 -k2,3n > gencode.v19.introns.bpregion.bed
 
-# Put Tagart et el annotations into bed format
+# Put Tagart et al annotations into bed format
 cat ../anno/taggart.supptable1.csv | python taggart_to_bed.py | sort -k1,1 -k2,3n > ../anno/taggart.supptable1.bed
+
+# Put Signal et al predictions into bed format
+tail -n +2 ../anno/gencode_v19_branchpoints.csv | awk -F , '{print $1"\t"$2"\t"$2+1"\t"$5"\t.\t"$4}' > ../anno/gencode_v19_branchpoints.bed
 
 # Join bp annotations to introns.
 bedtools intersect -loj -s -a gencode.v19.introns.bpregion.bed -b ../anno/mercer.suppdataS2.bed > introns_to_mercer.tsv
 bedtools intersect -loj -s -a gencode.v19.introns.bpregion.bed -b ../anno/taggart.supptable1.bed > introns_to_taggart.tsv
+bedtools intersect -loj -s -a gencode.v19.introns.bpregion.bed -b ../anno/gencode_v19_branchpoints.bed > introns_to_signal.tsv
 
 
 ## Prepare conservation scores.
