@@ -29,11 +29,11 @@ The script labranchor.py makes predictions for a fasta file of sequences upstrea
 
 **python labrachor.py <weights> <'top-bed'/'top'/'all'> <fasta_file> <output>**
 
-'''
-weights:
+
+**weights:**
 	The path to the h5 weights file (labranchor/2layer.h5)
 
-'top-bed'/'top'/'all':
+**'top-bed'/'top'/'all':**
 	top-bed: produces a bed file of predicted branchpoints. Assumes
 		 fasta names are chrom:three:strand (ex. chr1:1000:+)
 	top: reports the shift of the top scoring branchpoint from the
@@ -41,15 +41,14 @@ weights:
 	all: reports a comma seperated list of branchpoint probabilities
 	     corresponding to positions -70 to -1 from each 3'ss
 
-fasta_file:
+**fasta_file:**
 	Path to a fasta file of sequences upstream of 3'ss. Input sequences
 	are required to be 70 base pairs and should not contain characters
 	other than 'A', 'C', 'G', 'T', or 'N'. Any Ns will be considered A's
 	during prediction.
 
-output:
+**output:**
 	Path to the output file. See the above options for formatting.
-'''
 
 ### Creating 3'ss sequence fasta files
 
@@ -59,16 +58,15 @@ branchpoint prediction for all introns in given gtf file.
 It can be invoked with:
 
 **python create_fasta.py <genome> <gtf> <output>**
-'''
-genome:
+
+**genome:**
 	A path to a genome fasta file consistent with the gtf file.
 
-gtf:
+**gtf:**
 	The path to the gtf file you wish to predict branchpoints in.
 
-output:
+**output:**
 	The path to the output fasta file.
-'''
 
 ## Analysis Included in Paper
 
