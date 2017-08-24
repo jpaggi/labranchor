@@ -27,7 +27,7 @@ the 'labranchor' directory. Running LaBranchoR requires keras and numpy to be in
 The script labranchor.py makes predictions for a fasta file of sequences upstream of
 3'ss. It can be invoked with
 
-**python labrachor.py <weights> <'top-bed'/'top'/'all'> <fasta_file> <output>**
+**python labrachor.py weights 'top-bed'/'top'/'all' fasta_file output**
 
 
 **weights:**
@@ -57,7 +57,7 @@ branchpoint prediction for all introns in given gtf file.
 
 It can be invoked with:
 
-**python create_fasta.py <genome> <gtf> <output>**
+**python create_fasta.py genome gtf output**
 
 **genome:**
 	A path to a genome fasta file consistent with the gtf file.
