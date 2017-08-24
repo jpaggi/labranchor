@@ -10,7 +10,8 @@ for over 90% of 3'ss.**
 ## Download existing branchpoint annotations
 
 See our website linked above to download branchpoint predictions
-for introns in gencode v19 (hg19).
+for introns in gencode v19 (hg19) or view LaBranchoR predicted
+branchpoints in the UCSC genome browser.
 
 ## Running LaBranchoR
 
@@ -82,7 +83,7 @@ Properties of C and no -2 U branchpoints: notebooks/landscape_C_and_noT.ipynb
 
 Enrichments of ExAC variants: notebooks/ExAC_variant_enrichments.ipynb
 
-Generation of supplmentary data: notebooks/supp_data.ipynb
+Generation of ISM supplmentary data: notebooks/supp_data.ipynb
 
 ## Analysis not included in paper
 
