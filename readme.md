@@ -35,7 +35,7 @@ The script labranchor.py makes predictions for a fasta file of sequences upstrea
 
 **'top-bed'/'top'/'all':**
 	top-bed: produces a bed file of predicted branchpoints. Assumes
-		 fasta names are chrom:three:strand (ex. chr1:1000:+)
+		 fasta names are chrom\:three\:strand (ex. chr1:1000:+)
 	top: reports the shift of the top scoring branchpoint from the
 	     associated 3'ssfor each fasta entry
 	all: reports a comma seperated list of branchpoint probabilities
