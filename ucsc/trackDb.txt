@@ -1,0 +1,10 @@
+track mcap
+compositeTrack on
+shortLabel LaBranchoR
+longLabel LaBranchoR branchpoints
+group genes
+visibility dense
+html labranchor
+type bigBed
+mouseOverField branchpoint
+bigDataUrl lstm.gencode_v19.hg19.top.bb

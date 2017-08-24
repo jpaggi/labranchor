@@ -1,0 +1,8 @@
+hub LaBranchoR Hub
+shortLabel LaBranchoR branchpoints
+longLabel LaBranchoR branchpoints
+genomesFile genomes.txt
+email jpaggi@stanford.edu
+descriptionUrl labranchor.html
+genome hg19
+trackDb trackDb.txt
