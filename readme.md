@@ -19,7 +19,7 @@ please open an issue requesting the desired predictions or contact the
 authors via email.
 
 
-**All of the code and model weights needed to run LabranchoR are available in
+**All of the code and model weights needed to run LaBranchoR are available in
 the 'labranchor' directory. Running LaBranchoR requires keras and numpy to be installed.**
 
 ### Predicting branchpoints
@@ -35,7 +35,7 @@ The script labranchor.py makes predictions for a fasta file of sequences upstrea
 
 **'top-bed'/'top'/'all':**
 	top-bed: produces a bed file of predicted branchpoints. Assumes
-		 fasta names are chrom\:three\:strand (ex. chr1:1000:+)
+		 fasta names are chrom:3'ss_coord:strand (ex. chr1:1000:+)
 	top: reports the shift of the top scoring branchpoint from the
 	     associated 3'ssfor each fasta entry
 	all: reports a comma seperated list of branchpoint probabilities
