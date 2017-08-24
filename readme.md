@@ -29,7 +29,7 @@ The script labranchor.py makes predictions for a fasta file of sequences upstrea
 
 **python labrachor.py <weights> <'top-bed'/'top'/'all'> <fasta_file> <output>**
 
-"""
+'''
 weights:
 	The path to the h5 weights file (labranchor/2layer.h5)
 
@@ -49,7 +49,7 @@ fasta_file:
 
 output:
 	Path to the output file. See the above options for formatting.
-"""
+'''
 
 ### Creating 3'ss sequence fasta files
 
@@ -59,7 +59,7 @@ branchpoint prediction for all introns in given gtf file.
 It can be invoked with:
 
 **python create_fasta.py <genome> <gtf> <output>**
-"""
+'''
 genome:
 	A path to a genome fasta file consistent with the gtf file.
 
@@ -68,7 +68,7 @@ gtf:
 
 output:
 	The path to the output fasta file.
-"""
+'''
 
 ## Analysis Included in Paper
 
