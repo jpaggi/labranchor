@@ -18,12 +18,15 @@ If having to run the model yourself would stop you from using LaBranchoR,
 please open an issue requesting the desired predictions or contact the
 authors via email.
 
-Running LaBranchoR requires keras and numpy to be installed.
+
+
+**All of the code and model weights needed to run LabranchoR are available in
+the 'labranchor' directory. Running LaBranchoR requires keras and numpy to be installed.**
 
 The script labranchor.py makes predictions for a fasta file of sequences upstream of
 3'ss. It can be invoked with
 
-python labrachor.py <weights> <'top-bed'/'top'/'all'> <fasta_file> <output>
+**python labrachor.py <weights> <'top-bed'/'top'/'all'> <fasta_file> <output>**
 
 weights:
 	The path to the h5 weights file (labranchor/2layer.h5)
@@ -50,7 +53,7 @@ branchpoint prediction for all introns in given gtf file.
 
 It can be invoked with:
 
-python <genome> <gtf> <output>
+**python create_fasta.py <genome> <gtf> <output>**
 
 genome:
 	A path to a genome fasta file consistent with the gtf file.
