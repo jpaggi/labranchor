@@ -7,6 +7,8 @@ to pervasive noise in the experimental data, but as we show in our
 paper, we estimate that LaBranchoR correcty predicts a branchpoint
 for over 90% of 3'ss.**
 
+Paggi J.M., Bejerano, G. A sequence-based, deep learning model accurately predicts RNA splicing branchpoints. bioRxiv 185868 (2017). DOI:[10.1101/185868](http://www.biorxiv.org/content/early/2017/09/07/185868)
+
 ## Download existing branchpoint annotations
 
 See our website linked above to download branchpoint predictions
