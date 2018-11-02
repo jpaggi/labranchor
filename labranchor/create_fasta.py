@@ -3,12 +3,12 @@ class Genome:
     def __init__(self, fasta_fn):
         self.genome = {}
         with open(fasta_fn) as fp:
-            chrom = fp.readline().strip()[1:]
+            chrom = fp.readline().strip()[1:].split(" ")[0]
             seq = ''
             for line in fp:
                 if line[0] == '>':
                     self.genome[chrom] = seq
-                    chrom = line.strip()[1:]
+                    chrom = line.strip()[1:].split(" ")[0]
                     seq = ''
                 else:
                     seq += line.strip().upper()
